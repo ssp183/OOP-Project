@@ -4,7 +4,7 @@ public class AtmSystem {
 	//Arraylist to hold bank 
 	//the ATM System holds customers with bank accounts (the System will act as the Bank)
 	private ArrayList<Account> Bank; //accounts of bank
-	private ArrayList<Customer> Users; //users of the bank
+	private ArrayList<Customer> User; //users of the bank
 }
 	// constructor to initialize ArrayList for the bank
 public AtmSystem(){
@@ -22,20 +22,21 @@ public void showAccounts(){
 	for (Account A : Bank) System.out.println(A.toString());
 }
 
-//parameter - newUser (customer) to be added
+//parameter - User (customer) to be added
 // add user to Customer list
 public Customer addUser(String firstName, String lastName, String pin){
-	Customer newUser = new Customer(firstName, lastName, pin, this);
-	this.userList.add(newUser);
+	Customer User = new Customer(firstName, lastName, pin, this);
+	this.User.add(newUser);
+	
+	return User;
+
+}
 
 //check if ATm is authortized with accountnumber
-public boolean aunthoritze(int accountNumber) {
-	boolean isTrue = false;
-	boolean is = false;
-	For (Account A : Bank) {
-		if(accountNumber ==
-	}
-
+public Customer userLogin(String userID, String pin) { 
+	//check if info matches
+	
+}
 	
 	//System.out.println("Welcome to the ATM: Please select a choice");
 	//Scanner sc = new Scanner(System.in);
