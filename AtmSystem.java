@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 public class AtmSystem {
-	//Arraylist to hold bank A
+	//Arraylist to hold bank 
 	private ArrayList<Account> Bank;
 }
 	// constructor to initialize ArrayList for the bank
