@@ -37,15 +37,4 @@ public Customer userLogin(String userID, String pin) {
 	//check if info matches
 	
 }
-	
-	//System.out.println("Welcome to the ATM: Please select a choice");
-	//Scanner sc = new Scanner(System.in);
-	//enter Account Number
-	//System.out.println("Enter Account Number:");
-		
-	//}
-	//private static void transaction(){
-	//}
-	
-
 }
