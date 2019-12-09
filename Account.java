@@ -4,15 +4,30 @@ import java.util.Scanner;
 public class Account {
 	
 	
-	public boolean Verification {
+	public boolean Verification () {
+		boolean verified;
+		  //USER ENTERS ACCOUNTNUMBER
+		Scanner accountnum = new Scanner(System.in);
+		System.out.println("Enter your sixteen digit account number: "); 
+		int accountNumber= accountnum.nextInt();
+		int truePin= ATMSystem(accountNumber);
 		
-	Scanner input = new Scanner(System.in);
-	int accountNumber ;
-        //USER ENTERS PIN
-        System.out.println("Enter your four digit pin number: "); 
-        int pin = input.nextInt();
-	ATMSystem(accountNumber, pin);
+      		  //USER ENTERS PIN
+		Scanner input = new Scanner(System.in);
+      		System.out.println("Enter your four digit pin number: "); 
+       		int pin = input.nextInt();
 		
+		  //SYSTEM VERIFIES WITH TRUEPIN FROM ATM SYSTEM
+		if (pin == truePin) {
+			verified = true; 
+		} else {
+			verified= false;
+		}
+		
+		  //SYSTEM ALLOWS USER INTO SYSTEM
+		
+		
+			
 	}
 	
 	
