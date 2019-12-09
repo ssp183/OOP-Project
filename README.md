@@ -14,4 +14,4 @@ The user will insert their debit or ATM card into the machine which will allow f
 
 # Transaction.java
 
-# ATMsystem.java
+# ATMSystem.java
