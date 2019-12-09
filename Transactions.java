@@ -5,10 +5,10 @@ public class Transactions {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-Scanner scan = new Scanner (System.in);
+process();
 	}
 private static void process() {
-	Scanner scan = new Scanner (System.in);
+Scanner scan = new Scanner (System.in);
 float balance= 0;
 float deposit;
 float withdraw;
@@ -23,34 +23,36 @@ int nextStep;
 	
 
 switch(nextStep) {
-case 1:
+case 0:
 	System.out.println("Please enter the amount you would like to deposit:");
 	deposit= scan.nextFloat();
-	balance+= deposit;
+	balance= balance + deposit;
 	System.out.println("You deposited:" +deposit);
 	System.out.println("Your balance is:" +balance);
-
+	additionTransaction();
 break;
 
 case 2:
 	System.out.println("Please enter the amount you would like to withdraw:");
 	withdraw=scan.nextFloat();
-	balance-= withdraw;
+	balance= balance- withdraw;
 	System.out.println("Your withdrawn amount is:" +withdraw);
 	System.out.println("Your balance is:" +balance);
+	additionTransaction();
 	break;
 
-case 3:
+case 4:
 	System.out.println("Your balance is:" +balance);
+	additionTransaction();
 break;
 	}
 
 }
 private static void additionTransaction() {
 	Scanner scan = new Scanner (System.in);
+	System.out.println("Press 3 for choosing another transaction ");
 	 int additionTransaction;
     additionTransaction=scan.nextInt();
-    System.out.println("Press 3 for choosing another transaction ");
     process();
     if (additionTransaction!=3) {
     	System.out.println("Please choose option 3");
