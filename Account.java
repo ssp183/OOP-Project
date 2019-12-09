@@ -26,16 +26,16 @@ public class Account {
 			System.out.println("Correct PIN, you may now enter the system.");
 		} else {
 			verified= false;
-			System.out.println("Incorrect PIN entered");
+			System.out.println("Incorrect PIN or Account Number");
 		}
 		
 		  //SYSTEM ALLOWS USER INTO SYSTEM
 		if (verified) {
-			 Transaction.();
+			 Transactions.main();
 		} else {
 			 Account.Verification();
 		}
-			
+			return;
 	}
 	
 	public static void main(String[] args) {
