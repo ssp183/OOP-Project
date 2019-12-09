@@ -1,14 +1,15 @@
 
 import java.util.Scanner;
 public class AtmSystem {
-	//Arraylist to hold bank 
+	//Arraylist to hold bank & users
 	//the ATM System holds customers with bank accounts (the System will act as the Bank)
 	private ArrayList<Account> Bank; //accounts of bank
 	private ArrayList<Customer> User; //users of the bank
 }
 	// constructor to initialize ArrayList for the bank
 public AtmSystem(){
-	Bank = new ArrayList<>();
+	Bank = new ArrayList<Account>();
+	User = new ArrayList<Customer>();
 }
 
 //parameter - A (account) to be added
