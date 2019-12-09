@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Account {
 	
-	
-	public Verification () {
+	public Transaction Verification () {
 		boolean verified;
+		
 		  //USER ENTERS ACCOUNTNUMBER
 		Scanner accountnum = new Scanner(System.in);
 		System.out.println("Enter your sixteen digit account number: "); 
@@ -28,15 +28,12 @@ public class Account {
 		
 		  //SYSTEM ALLOWS USER INTO SYSTEM
 		if (verified) {
-			return 
+			return Transaction();
 		} else {
-			return 
+			return Verification();
 		}
-		
 			
 	}
-	
-	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
