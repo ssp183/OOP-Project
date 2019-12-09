@@ -22,7 +22,7 @@ This is simple automatic teller machine; the user will insert their debit or ATM
 
 -The system will ask whether or not the user would like a receipt, and the user will select yes or no. If the user selects yes, a receipt will be printed. If the user selects no, the system will move forward with the final measures.
 
---The system will return the debit or ATM card to the user and wish them a good day.
+-The system will return the debit or ATM card to the user and wish them a good day.
 
 # ATMSystem.java
 - Main Class
