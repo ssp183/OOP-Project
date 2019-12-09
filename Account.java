@@ -31,9 +31,9 @@ public class Account {
 		
 		  //SYSTEM ALLOWS USER INTO SYSTEM
 		if (verified) {
-			 Transaction();
+			 Transaction.();
 		} else {
-			 Verification();
+			 Account.Verification();
 		}
 			
 	}
