@@ -20,13 +20,19 @@ public void showAccounts(){
 	for (Account A : Bank) System.out.println(A.toString());
 }
 
-public boolean aunthoritze
+//check if ATm is authortized with accountnumber
+public boolean aunthoritze(int accountNumber) {
+	boolean isTrue = false;
+	boolean is = false;
+	For (Account A : Bank) {
+		if(accountNumber ==
+	}
 
 	
 	//System.out.println("Welcome to the ATM: Please select a choice");
 	//Scanner sc = new Scanner(System.in);
-	//enter PIN
-	//System.out.println("Enter PIN:");
+	//enter Account Number
+	//System.out.println("Enter Account Number:");
 		
 	//}
 	//private static void transaction(){
