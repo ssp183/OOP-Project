@@ -2,7 +2,9 @@
 import java.util.Scanner;
 public class AtmSystem {
 	//Arraylist to hold bank 
-	private ArrayList<Account> Bank;
+	//the ATM System constains customers with bank accounts
+	private ArrayList<Account> Bank; //accounts of bank
+	private ArrayList<Customer> Users; //users of the bank
 }
 	// constructor to initialize ArrayList for the bank
 public AtmSystem(){
@@ -19,6 +21,12 @@ public void addBank(Account A){
 public void showAccounts(){
 	for (Account A : Bank) System.out.println(A.toString());
 }
+
+//parameter - new user (customer) to be added
+// add user to Customer list
+public Customer addUser(String firstName, String lastName, String pin){
+	Customer newUser = new Customer(firstName, lastName, pin, this);
+	this.userList.add(newUser);
 
 //check if ATm is authortized with accountnumber
 public boolean aunthoritze(int accountNumber) {
