@@ -1,17 +1,36 @@
 
 import java.util.Scanner;
 public class AtmSystem {
-	private static Scanner sc;
-	private static balance = 0; //initial balance
-	private int Transaction; 
+	//Arraylist to hold bank A
+	private ArrayList<Account> Bank;
+}
+	// constructor to initialize ArrayList for the bank
+public AtmSystem(){
+	Bank = new ArrayList<>();
+}
+
+//parameter - A (account) to be added
+//add account to Bank list 
+public void addBank(Account A){
+	Bank.add(A);
+}
+
+//list of accounts for the Bank
+public void showAccounts(){
+	for (Account A : Bank) System.out.println(A.toString());
+}
+
+public boolean aunthoritze
+
 	
-	public static void main(String[] args) {
-		// main class (calls from Account & Transactions)
-	sc = new Scanner(System.in);
+	//System.out.println("Welcome to the ATM: Please select a choice");
+	//Scanner sc = new Scanner(System.in);
+	//enter PIN
+	//System.out.println("Enter PIN:");
+		
+	//}
+	//private static void transaction(){
+	//}
 	
-		
-	}
-	private static void transaction(){
-		
 
 }
