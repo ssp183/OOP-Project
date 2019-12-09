@@ -5,9 +5,9 @@ This is simple automatic teller machine; the user will insert their debit or ATM
 
 # Account.java
 - The user will insert their debit or ATM card into the machine which will allow for the system to proceed to user verification.
--The system will use card reader to locate account and pin number.
--The system will ask the user to enter their unique four digit pin code and upon verification the user will enter the system.
--If the pin is incorrect, the system will print "Incorrect Pin" and return the card. 
+- The system will use card reader to locate account and pin number.
+- The system will ask the user to enter their unique four digit pin code and upon verification the user will enter the system.
+- If the pin is incorrect, the system will print "Incorrect Pin" and return the card. 
 # Transaction.java
 - After user is accepted into the system, user is taken to transaction menu
 - Users can select to Withdraw, deposit, check balance. 
