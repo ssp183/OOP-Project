@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Account {
 	
-	public Transaction Verification () {
+	private void Verification () {
+		
 		boolean verified;
 		
 		  //USER ENTERS ACCOUNTNUMBER
@@ -22,15 +23,17 @@ public class Account {
 		  //SYSTEM VERIFIES WITH TRUEPIN FROM ATM SYSTEM
 		if (pin == truePin) {
 			verified = true; 
+			System.out.println("Correct PIN, you may now enter the system.");
 		} else {
 			verified= false;
+			System.out.println("Incorrect PIN entered");
 		}
 		
 		  //SYSTEM ALLOWS USER INTO SYSTEM
 		if (verified) {
-			return Transaction();
+			 Transaction();
 		} else {
-			return Verification();
+			 Verification();
 		}
 			
 	}
