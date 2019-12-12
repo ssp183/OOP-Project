@@ -11,7 +11,7 @@ public class Account {
 		System.out.println("Enter your sixteen digit account number: "); 
 		int accountNumber= accountnum.nextInt();
 		accountnum.close();
-		int truePin= ATMSystem.userId(accountNumber);
+		int truePin= ATMSystem.userLogin(accountNumber);
 		
       		  //USER ENTERS PIN
 		Scanner input = new Scanner(System.in);
