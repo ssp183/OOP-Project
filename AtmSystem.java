@@ -25,7 +25,7 @@ public void showAccounts(){
 
 //parameter - User (customer) to be added
 // add user to Customer list
-public Customer addUser(String firstName, String lastName, String pin){
+public Customer addUser(String firstName, String lastName, int pin){
 	Customer User = new Customer(firstName, lastName, pin, this);
 	this.User.add(newUser);
 	
@@ -34,8 +34,9 @@ public Customer addUser(String firstName, String lastName, String pin){
 }
 
 //check if ATm is authortized with accountnumber
-public Customer userLogin(String userID, String pin) { 
+public Customer userLogin(String userID) { 
 	//check if info matches
 	
+	return pin;
 }
 }
