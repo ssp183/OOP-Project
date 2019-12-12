@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Account {
 	
-	public void Verification () {
+	public static void Verification () {
 		
 		boolean verified;
 		
@@ -32,7 +32,7 @@ public class Account {
 		if (verified) {
 			 Transactions.process();
 		} else {
-			 Account.verification();
+			 return;
 		}
 			 
 	}
