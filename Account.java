@@ -9,7 +9,7 @@ public class Account {
 		  //USER ENTERS ACCOUNTNUMBER
 		Scanner accountnum = new Scanner(System.in);
 		System.out.println("Enter your sixteen digit account number: "); 
-		int accountNumber= accountnum.nextInt();
+		double accountNumber= accountnum.nextInt();
 		accountnum.close();
 		int truePin= AtmSystem.userLogin(accountNumber);
 		
