@@ -1,4 +1,3 @@
-import java.util.Date;
 import java.util.Scanner;
 
 public class Account {
@@ -31,9 +30,9 @@ public class Account {
 		
 		 //SYSTEM ALLOWS USER INTO SYSTEM
 		if (verified) {
-			 Transactions.main();
+			 Transactions.process();
 		} else {
-			 Account.Verification();
+			 Account.verification();
 		}
 			 
 	}
