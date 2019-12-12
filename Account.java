@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Account {
 	
-	public boolean Verification () {
+	public void Verification () {
 		
 		boolean verified;
 		
@@ -29,15 +29,13 @@ public class Account {
 			System.out.println("Incorrect PIN or Account Number");
 		}
 		
-		return verified;
-		
-		/*  //SYSTEM ALLOWS USER INTO SYSTEM
+		 //SYSTEM ALLOWS USER INTO SYSTEM
 		if (verified) {
 			 Transactions.main();
 		} else {
 			 Account.Verification();
 		}
-			return; */
+			 
 	}
 	
 	public static void main(String[] args) {
