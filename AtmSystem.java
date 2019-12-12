@@ -35,7 +35,7 @@ public Customer addUser(String firstName, String lastName, int pin){
 
 //check if ATM is authortized with accountnumber
 public Customer userLogin(double accountNumber) { 
-	//check if info matches
+	//search for matching accountnumber in system and return int pin
 	
 	return pin;
 }
