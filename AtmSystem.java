@@ -33,8 +33,8 @@ public Customer addUser(String firstName, String lastName, int pin){
 
 }
 
-//check if ATm is authortized with accountnumber
-public Customer userLogin(String userID) { 
+//check if ATM is authortized with accountnumber
+public Customer userLogin(double accountNumber) { 
 	//check if info matches
 	
 	return pin;
