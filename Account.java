@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Account {
 	
-	public static void Verification () {
+	public static void verification () {
 		
 		boolean verified;
 		
@@ -39,7 +39,7 @@ public class Account {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	Verification();
+	 verification();
 	}
 
 }
